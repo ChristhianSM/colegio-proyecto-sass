@@ -1,0 +1,65 @@
+// Header
+
+header {
+    .menuNavegacion {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+
+        .logo {
+            width: 100px;
+            height: 70px;
+            display: inline-block;
+            margin: 10px;
+
+            img {
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .enlaces {
+
+            a {
+                color: black;
+                text-decoration: none;
+                font-weight: 300;
+                margin-right:15px ;
+                padding: 10px;
+                font-size: 1.2rem;
+                transition: all 0.6s;
+
+                &:nth-child(5){
+                    background-color:#04175d;
+                    color: white;
+                    border-radius: 10px;
+                    padding: 15px;
+                }
+
+                &:hover{
+                    color: #7c0e04;
+                    transform: scale(1.6);
+                }
+            }     
+        }
+        
+        .hamburguesa{
+            height: 100%;
+            width: 70px;
+            text-align: center;
+            display: none;
+
+            img {
+                padding: 23px 23px;
+            }
+        }
+    }
+}

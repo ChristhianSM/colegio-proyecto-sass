@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Proyecto</title>
+
+    <!-- Animaciones -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Estilos -->
+    <!-- <link rel="stylesheet" href="./styles/stylesIndex.css"> -->
+    
+    <!-- Estilos con sass -->
+    <link rel="stylesheet" href="./scss/styles.css">
+
+
+</head>
+<body>
+    <header >
+        <nav class="menuNavegacion">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="enlaces">
+                <a href="#">Inicio</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./formacion_academica.html">Formacion Academica</a>
+                <a href="./contactos.html">Contactanos</a>
+                <a href="./admision.html">Admision</a>
+            </div>
+            <div class="hamburguesa">
+                <img id="hamburguesa" src="./img/menu-24px.svg" alt="menu-hamburguesa">
+            </div>
+        </nav>
+        
+    </header>
+
+    <main> 
+        <div id="index">
+            <div class="textos animate__animated animate__zoomIn">
+                <h1 class="titulo">Colegio Proyecto</h1>
+                <p class="parrafo">Formando grandes personas.</p>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <section id="beneficios">
+                <h2 class="titulo animate__animated animate__backInDown">Beneficios</h2>
+                <div class="contenedorBeneficios">
+                    <div class="cardBeneficio">
+                        <span class="material-icons">
+                            book
+                        </span>
+                        <h3 class="subtitulo">Docentes especializados</h3>
+                        <p class="parrafo">Nuestros docentes cuentan con una amplia experiencia profesional y académica</p>
+                    </div>
+                    <div class="cardBeneficio">
+                        <span class="material-icons">
+                            accessibility_new
+                        </span>
+                        <h3 class="subtitulo">Clases online</h3>
+                        <p class="parrafo">Clases en vivo, para interactuar profesor y alumno</p>
+                    </div>
+                    <div class="cardBeneficio">
+                        <span class="material-icons">
+                            description
+                        </span>
+                        <h3 class="subtitulo">Material Digital</h3>
+                        <p class="parrafo">Banco de preguntas, separatas teóricas y prácticas. Prácticas por curso.</p>
+                    </div>
+                    <div class="cardBeneficio">
+                        <span class="material-icons">
+                            work
+                        </span>
+                        <h3 class="subtitulo">Orientacion Psicologica</h3>
+                        <p class="parrafo">Brindamos al alumno orientación psicológica y seguimiento constante.</p>
+                    </div>
+                    <div class="cardBeneficio">
+                        <span class="material-icons">
+                            missed_video_call
+                        </span>
+                        <h3 class="subtitulo">Constante reforzamiento</h3>
+                        <ul>
+                            <li>Simulacros semanales</li>
+                            <li>Seminarios semanales</li>
+                            <li>Reforzamientos gratuitos</li>
+                        </ul>
+                    </div>
+                    <div class="cardBeneficio">
+                        <span class="material-icons">
+                            laptop_chromebook
+                        </span>
+                        <h3 class="subtitulo">Soporte</h3>
+                        <p class="parrafo">Nuestro equipo de soporte técnico te ayudará de forma permanente. Además, asesoría y seguimiento académico.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section admision -->
+            <section id="admision">
+                <div class="contenedorAdmision">
+                    <h2 class="titulo animate__animated animate__backInLeft">Admision 2021 </h2>
+                    <p class="parrafo">Dejanos tus datos y contactaremos contigo</p>
+                    <div class="formulario">
+                        <form action="" class="formularioAdmision">
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Apellidos">
+                            <select name="" id="">
+                                <option value="dni">DNI</option>
+                                <option value="carnet">Carnet de extranjeria</option>
+                                <option value="pasaporte">Pasaporte</option>
+                            </select>
+                            <input type="text" placeholder="Numero">
+                            <input type="email" placeholder="Correo electronico">
+                            <input type="text" placeholder="Telefono">
+                            <select name="" id="" class="grado">
+                                <option value="">Grado</option>
+                                <option value="primerGrado">1° Grado de Primaria</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">Provincia</option>
+                                <option value="piura">Piura</option>
+                                <option value="lima">Lima</option>
+                            </select>
+                            <div class="terminos">
+                                <input type="checkbox" name="terminos" id="">
+                                <label for="terminos"><a href=""> Acepto los terminos y condiciones</a></label>
+                            </div>
+                            <div class="botonEnviar">
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="piePagina">
+        <div class="contenedor">
+            <div class="frame">
+                <p class="titulo">Ubicanos</p>
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Les%20Rambles,%201%20Barcelona,%20Spain+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+            <div class="colegio">
+                <p class="titulo">Colegio Proyecto</p>
+                <a href="#">Inicio</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./formacion_academica.html">Formacion Academica</a>
+                <a href="./contactos.html">Contactanos</a>
+                <a href="./admision.html">Admision</a>
+            </div>
+            <div class="redesSociales">
+                <p class="titulo">Redes sociales</p>
+                <a href=""> <i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-whatsapp'></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-youtube' ></i></a>
+            </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

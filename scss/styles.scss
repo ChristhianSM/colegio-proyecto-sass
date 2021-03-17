@@ -1,0 +1,51 @@
+// Imports
+@import "./components/header";
+@import "./components/variables";
+@import "./components/imagen-fondo";
+@import "./components/index";
+@import "./components/nosotros";
+@import "./components/formacion-academica";
+@import "./components/contactos";
+@import "./components/admision";
+@import "./components/footer";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../img/fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+/* Animaciones en nosotros.html */
+.cardNosotros.animate__animated.animate__fadeInLeft {
+    --animate-duration: 3s;
+  }
+.cardNosotros.animate__animated.animate__fadeInRight {
+    --animate-duration: 3s;
+  }
+
+  /* Animaciones en contacto,html */
+  .ubicacion.animate__animated.animate__fadeInLeftBig{
+    --animate-duration: 2s;
+  }
+
+  .formulario.animate__animated.animate__fadeInRightBig{
+    --animate-duration: 2s;
+  }
+
+

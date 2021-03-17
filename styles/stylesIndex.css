@@ -1,0 +1,1382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../img/fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+
+/* Header */
+header .menuNavegacion {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+header .logo {
+    width: 100px;
+    height: 70px;
+    display: inline-block;
+    margin: 10px;
+}
+
+header .logo img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .menuNavegacion .enlaces a {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    margin-right:15px ;
+    padding: 10px;
+    font-size: 1.2rem;
+    transition: all 0.6s;
+}
+
+header .menuNavegacion .enlaces a:nth-child(5){
+    background-color:#04175d;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+header .menuNavegacion .enlaces a:hover{
+    color: #7c0e04;
+    /* background-color: #303a52; */
+    transform: scale(1.6);
+    /* border-radius: 10px; */
+}
+
+header .menuNavegacion .hamburguesa{
+    height: 100%;
+    width: 70px;
+    text-align: center;
+    display: none;
+}
+
+header .menuNavegacion .hamburguesa img {
+    padding: 23px 23px;
+}
+
+/* header .menuNavegacion ul>li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 30px;
+    position: relative;
+}
+
+.menuNavegacion ul {
+    flex: 1;
+    text-align: end;
+    list-style: none;
+    font-size:0 
+}
+
+.menuNavegacion ul .submenu {
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+ }
+
+ .menuNavegacion ul .submenu li {
+    display: block;
+ }
+
+ .submenu li a {
+     display: block;
+     padding: 15px;
+     color: white;
+ }
+ 
+ ul li:hover .submenu {
+    display:block;
+ }
+ 
+header .menuNavegacion ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 300;
+}
+
+header .menuNavegacion ul li a:hover {
+    color: #ce7d35;
+    transition: all .4s;
+}
+
+header .menuNavegacion ul li:nth-child(5){
+    padding: 10px;
+    background-color: #0b2a9a;
+    color: white;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+header .menuNavegacion ul li:nth-child(5):hover{
+    background-color: #04175d;
+}
+
+header .menuNavegacion ul li:nth-child(5) a{
+    color: white;
+} */
+
+#index {
+    background: linear-gradient(to right, hsla(0, 54%, 33%, 0.609), hsla(312, 3%, 28%, 0)), url("../img/imagen-8.jpg");
+    width: 100%;
+    height: 900px;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+#index .textos {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    text-align: center;
+}
+
+#index .textos .titulo {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#index .textos .parrafo {
+    font-size: 1.3rem;
+}
+
+/* index.html */
+/* Main  */
+main {
+    background-color: #33333334;
+}
+
+main .contenedor{
+    /* text-align: center; */
+    width: 70%;
+}
+
+main #beneficios .titulo {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgb(6, 6, 134);
+}
+
+main #beneficios .contenedorBeneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%
+}
+
+.contenedorBeneficios .cardBeneficio {
+    width: 30%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contenedorBeneficios .cardBeneficio span{
+    font-size: 4rem;
+    color: #0b2a9a;
+}
+
+.contenedorBeneficios .cardBeneficio .subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#admision .contenedor{
+    width: 80%;
+}
+
+#admision .contenedorAdmision .titulo{
+    margin-top: 20px;
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+    color: rgb(6, 6, 134);
+}
+
+#admision .contenedorAdmision .parrafo{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.contenedorAdmision .formularioAdmision{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#admision .formularioAdmision input {
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    font-size: 1.1rem;
+}
+
+#admision .formularioAdmision select {
+    width: 48%;
+    height: 45px;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+#admision .formularioAdmision .terminos {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+#admision .formularioAdmision .terminos input{
+    width: 2%;
+    text-align: left;
+}
+
+#admision .formularioAdmision .botonEnviar {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+#admision .formularioAdmision .botonEnviar input {
+    width: 15%;
+    text-align: center;
+    background-color: rgba(22, 22, 53, 0.226);
+    color: black;
+}
+
+#admision .formularioAdmision .botonEnviar input:hover{
+    background-color: #0b2a9a;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    /* background-color: #3a3838b8; */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.486), hsla(308, 45%, 52%, 0.603)), url("../img/imagen-5.jpeg");
+    background: linear-gradient(to right, #09191df0, #171111de), url("../img/imagen-5.jpeg");
+    /* background-image: url("../img/imagen-portada.jpeg"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+#piePagina .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 90%;
+}
+
+#piePagina .frame .titulo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    color: white;
+    /* letter-spacing: 10px; */
+}
+
+#piePagina .frame {
+    width: 33%;
+}
+    
+#piePagina iframe{
+    width: 100%;
+    height: 30vh;
+    border-radius: 5px;
+}
+
+#piePagina .colegio {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#piePagina .colegio .titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    color: white;
+}
+
+#piePagina .colegio a {
+    text-decoration: none;
+    margin-bottom: 25px;
+    color: white;
+}
+
+#piePagina .colegio a:hover {
+    text-decoration: underline;
+    color: #0b2a9a;
+}
+
+#piePagina .redesSociales {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#piePagina .redesSociales .titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    color: white;
+}
+
+.redesSociales a {
+    border: 1px solid #0b2a9a;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+}
+
+.redesSociales a i {
+    font-size: 2.7rem;
+    color: #0b2a9a;
+}
+
+#piePagina .imagenFinal {
+    width: 33%;
+}
+
+#piePagina .imagenFinal img{
+    width: 100%;
+}
+
+
+/* nosotros.html */
+
+
+/* Main */
+main#nosotros .textoFlotante{
+    margin-top: 70px;
+    background: linear-gradient(to right, hsla(0, 54%, 33%, 0.609), hsla(312, 3%, 28%, 0)), url("../img/1960.jpg");
+    width: 100%;
+    height: 900px;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+ #nosotros .textoFlotante .textos {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    text-align: center;
+}
+
+#nosotros .textoFlotante .textos .titulo {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#nosotros .textoFlotante .textos .parrafo {
+    font-size: 1.3rem;
+}
+
+#nosotros h1 {
+    font-size: 2.6rem;
+    text-align: center;
+    color: #04175d;
+} 
+
+#nosotros .contenedorNosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#nosotros .contenedorNosotros .cardNosotros{
+   grid-column: 1/-1;
+    border: 3px dotted;
+    padding: 10px 0;
+}
+
+#nosotros .contenedorNosotros .cardNosotros #quienesSomos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorNosotros .cardNosotros .contenedorTextos{
+    width: 40%;
+}
+
+.contenedorTextos .titulo {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #7c0e04;
+}
+
+.contenedorTextos .parrafo {
+    text-align: justify;
+}
+
+.contenedorNosotros .cardNosotros .imagen {
+    width: 50%;
+}
+
+.contenedorNosotros .cardNosotros .imagen:hover img{
+    transform: scale(0.9);
+    border-radius: 10px;
+}
+
+.contenedorNosotros .cardNosotros .imagen img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 1s;
+}
+
+#nosotros .contenedorNosotros .cardNosotros #mision{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nosotros .contenedorNosotros .cardNosotros #vision{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nosotros .contenedorNosotros .cardNosotros #historia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Section equipo */
+#equipo {
+    margin-top: 30px;
+}
+
+#equipo .titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: #04175d;
+}
+
+.contenedorEquipo {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: space-around;
+}
+
+.contenedorEquipo .cardEquipo {
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.contenedorEquipo .cardEquipo img {
+    width: 85%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.contenedorEquipo .cardEquipo:hover img {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.contenedorEquipo .cardEquipo{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.contenedor .cardEquipo .parrafoOculto {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: -30%;
+    color: black;
+    font-size: 1.2rem;
+    transition: all 2s;
+}
+
+.contenedor .cardEquipo:hover p {
+    bottom: 40%;
+}
+
+/* Plataforma */
+#plataforma .titulo{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 2rem;
+    color: #7c0e04;
+}
+
+#plataforma .parrafo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#plataforma .contenedorPlataforma {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-gap: 10px;
+}
+
+
+.contenedorPlataforma .imagenesPlataforma{
+    grid-column: 1/3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+
+.contenedorPlataforma .imagen {
+    width: 45%;
+    margin: 10px;
+}
+
+.contenedorPlataforma .imagen img{
+    width: 100%;
+}
+
+.contenedorPlataforma .textosPlataforma {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-column: 3/4;
+}
+
+.textosPlataforma .subtitulo {
+    font-size: 1.8rem; 
+}
+
+.textosPlataforma .parrafo {
+    padding: 0 50px; 
+}
+
+.textosPlataforma a {
+    padding: 10px;
+    background-color:#0b2a9a;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+/* formacion_academica.html */
+/* Header */
+
+/* Main */
+main#formacion_academica .imagenInicial img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+#formacion .contenedor {
+    padding-bottom: 0px;
+}
+
+
+#formacion img{
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+
+
+#formacion_academica .contenedor #formacion{
+    text-align: center;
+}
+ 
+#formacion_academica .contenedor #formacion .titulo {
+    color: #04175d;
+    font-size: 2.3rem;
+}
+
+#formacion_academica .contenedor #formacion .parrafo {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#niveles .titulo{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #7c0e04;
+}
+
+#niveles .contenedorNiveles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contenedorNiveles .cardNivel {
+    width: 30%;
+    border: 1px solid  #333333;
+    border-radius: 5px;
+    padding: 10px;
+    background-image: linear-gradient(to right , #9E9E9E , rgba(110, 110, 94, 0.534));
+}
+
+.cardNivel div {
+    width: 100%;
+    height: 30vh;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.cardNivel div img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    transition: all 1s;
+}
+
+.cardNivel div:hover img {
+    transform: scale(1.1)
+}
+
+.cardNivel .subtitulo {
+    margin-bottom: 20px;
+}
+
+.cardNivel .parrafo {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.cardNivel .boton {
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #333333;
+    font-size: 1.1rem;
+}
+
+.cardNivel .boton:hover {
+    background-color: #04175d;
+    color: white;
+}
+
+/* Bootstrap */
+:root {
+    --color-title: black;
+}
+
+.bg-azul {
+    background-color: #0b2a9a;
+    color: white !important;
+}
+
+.black-title {
+    color: --color-title !important;
+}
+
+.blue-title {
+    color: #0b2a9a !important;
+}
+
+.red-title {
+    color: #7c0e04;
+}
+
+/* contacto.html */
+
+/* Main */
+main#contacto .textoFlotante{
+    margin-top: 70px;
+    background: linear-gradient(to right, hsla(0, 54%, 33%, 0.609), hsla(312, 3%, 28%, 0)), url("../img/educacion_distancia.jpg");
+    width: 100%;
+    height: 900px;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+ #contacto .textoFlotante .textos {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    text-align: center;
+}
+
+#contacto .textoFlotante .textos .titulo {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#contacto .textoFlotante .textos .parrafo {
+    font-size: 1.3rem;
+}
+
+#contacto .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#contacto .contenedor .ubicacion {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ubicacion .titulo {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.ubicacion .mapa {
+    width: 100%;
+}
+
+.ubicacion .mapa iframe {
+    border-radius: 5px;
+}
+
+#contacto .contenedor .formulario {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #333333;
+    padding: 10px;
+}
+
+.formulario .titulo {
+    width: 100%;
+    text-align: center;
+}
+
+.formulario select {
+    height: 35px;
+    border: 1px solid #333333;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid #333333;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid #333333;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+#contacto .contenedor .formulario .boton {
+    width: 35%;
+}
+
+#contacto .contenedor .formulario .boton:hover {
+    background-color: #04175d;
+    color: white;
+}
+
+
+/* admision.html */
+/* Header */
+main#admision_alumnos .textoFlotante{
+    margin-top: 70px;
+    background: linear-gradient(to right, hsla(0, 54%, 33%, 0.609), hsla(312, 3%, 28%, 0)), url("../img/el-impacto-2.jpg");
+    width: 100%;
+    height: 900px;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+ #admision_alumnos .textoFlotante .textos {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    text-align: center;
+}
+
+#admision_alumnos .textoFlotante .textos .titulo {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#admision_alumnos .textoFlotante .textos .parrafo {
+    font-size: 1.3rem;
+}
+
+#admision .vacantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#admision .vacantes .titulo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #04175d;
+}
+
+#admision .vacantes .subtitulo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #7c0e04;
+}
+
+#admision .vacantes table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#admision .vacantes table th{
+    background-color: #081d68d7;
+    color: white;
+}
+
+#admision .vacantes table td, #admision .vacantes table th {
+    padding: 15px 50px;
+}
+
+#criterios_admision {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#criterios_admision .subtitulo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#criterios_admision ol {
+    width: 100%;
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+#criterios_admision ol li {
+    margin-bottom: 10px;
+}
+
+
+#formularioAdmision .contenedor{
+    margin-top: 0;
+    padding-top:  0px;
+    width: 70%;
+}
+
+#admision .contenedor-admision{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor-admision .titulo {
+    width: 100%;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #0b2a9a;
+}
+
+.contenedor-admision .parrafo {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #962e41f2;
+    font-weight: 600;
+}
+
+.contenedor-admision .formulario{
+    width: 100%;
+}
+
+.contenedor-admision .formulario .formularioAdmision{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contenedor-admision input {
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+    outline: none;
+} 
+
+.contenedor-admision select {
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 6px;
+    border: 2px solid rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+    outline: none;
+}
+
+.contenedor-admision .terminos{
+    width: 100%;
+}
+ 
+.contenedor-admision .terminos input{
+    width: 2%;
+}
+
+.contenedor-admision .terminos label {
+    font-weight: 700;
+}
+
+.contenedor-admision .botonEnviar {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor-admision .botonEnviar input{
+    text-align: center;
+    width: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.contenedor-admision .botonEnviar input:hover{
+    background-color: #0b2a9a;
+    color: white;
+}
+
+
+/* Media query */
+@media screen and (max-width: 768px){
+
+    /* Header */
+    header .menuNavegacion .hamburguesa {
+        display: block;
+    }
+
+    header .menuNavegacion .enlaces {
+        position: fixed;
+        background-color: #303a52;
+        left: 0;
+        top: 90px;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+    }
+
+    header .menuNavegacion .enlaces a {
+        color: white;
+    }
+
+    header .menuNavegacion .enlaces.enlacesDos {
+        transform: translateX(0%);
+    }
+    
+    /* header .menuNavegacion ul>li {
+        padding: 0 10px;
+    } */
+
+    /*  index.html */
+    .contenedorBeneficios .cardBeneficio {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    footer .video {
+        width: 80%;
+        height: 70%;
+    }
+
+    /* nosotros.html */
+    #nosotros .contenedorTextos,
+    #nosotros .imagen {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #mision .imagen {
+        order: 1;
+    }
+
+    #historia .imagen {
+        order: 1;
+    }
+
+    #equipo .contenedorEquipo {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #plataforma .textosPlataforma {
+        text-align: center;
+    }
+
+    #equipo .contenedorEquipo .cardEquipo img{
+        width: 100%;
+        height: 200px;
+    }
+
+    /* formacion_academica.html */
+    #formacion_academica .contenedor {
+        width: 95%;
+    }
+
+    
+    /* contacto.html */
+    #contacto .contenedor {
+        width: 80%;
+        justify-content: center;
+    }
+
+    #contacto .contenedor .ubicacion {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #contacto .contenedor .ubicacion .mapa iframe{
+        height: 300px;
+    }
+
+    #contacto .contenedor .formulario {
+        width: 80%;
+        padding: 10px 30px;
+    }
+
+    #contacto .formulario .titulo {
+        margin: 10px 0;
+    }
+
+    #contacto .formulario select {
+        margin-bottom: 10px;
+    }
+
+    #contacto .formulario input {
+        padding: 5px 5px;
+    }
+
+    /* Admision */
+    #admision_alumnos .contenedor {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 425px){
+    header .menuNavegacion ul>li {
+        padding: 0 5px;
+    }
+
+    header .menuNavegacion ul>li a{
+        font-size: 1rem;
+    }
+
+    .contenedorBeneficios .cardBeneficio {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #admision .formularioAdmision input {
+        width: 100%;
+    }
+    
+    #admision .formularioAdmision select {
+        width: 100%;
+    }
+
+    #admision .formularioAdmision .botonEnviar input {
+        width: 35%;
+    }
+
+    #admision .contenedorAdmision .formulario .terminos input {
+        width: 10%;
+    }
+
+    /* Nosotros.html */
+    #nosotros .contenedor {
+        width: 95% ;
+    }
+    #nosotros .contenedorTextos .titulo{
+        font-size: 1.4rem;
+    }
+
+    #nosotros .contenedorTextos .parrafo{
+        font-size: 1rem;
+    }
+
+    #nosotros .imagen img{
+        height: 200px;
+    }
+
+    #equipo .contenedorEquipo {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #equipo .contenedorEquipo .cardEquipo img{
+        width: 100%;
+        height: 180px;
+    }
+
+    #plataforma .contenedorPlataforma img {
+        width: 100%;
+        height: 130px;
+    }
+
+     /* formacion_academica.html */
+     #formacion_academica #formacion .parrafo {
+         margin: 0 20px;
+     }
+
+     #formacion_academica .contenedorNiveles {
+         justify-content: center;
+     }
+     #formacion_academica .cardNivel {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    #formacion_academica .cardNivel .parrafo {
+        margin: 0 10px;
+    }
+
+    #formacion_academica .cardNivel input {
+        margin: 10px 0;
+    }
+
+    /* Contacto */
+    #contacto .contenedor {
+        width: 100%;
+    }
+
+    #contacto .contenedor .ubicacion {
+        width: 90%;
+    }
+
+    #contacto .contenedor .formulario {
+        width: 90%;
+        padding: 10px 20px;
+    }
+
+    #contacto .contenedor .formulario select {
+        width: 100%;
+    }
+
+    /* Admision */
+    
+
+    footer .video {
+        width: 100%;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    header .textos .titulo {
+        font-size: 1.5rem;
+    }
+    header .textos .parrafo {
+        font-size: 1.2rem;
+    }
+
+    main #beneficios .titulo {
+        font-size: 1.5rem;
+    }
+
+    #beneficios .contenedorBeneficios .cardBeneficio {
+        border: 1px solid;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    #beneficios .contenedorBeneficios .cardBeneficio .subtitulo{
+        font-size: 1.3rem;
+    }
+
+    #beneficios .contenedorBeneficios .cardBeneficio .parrafo{
+        font-size: 1.1rem;
+    }
+
+    #admision .contenedorAdmision .titulo{
+        font-size: 1.5rem;
+    }
+
+    #admision .contenedorAdmision .parrafo{
+        font-size: 1.2rem;
+    }
+
+    #admision .contenedorAdmision .formulario input {
+        padding: 5px 5px;
+        font-size: 0.8rem;
+    }
+
+    #admision .contenedorAdmision .formulario select {
+        height: 30px;
+        padding: 5px;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    #admision .contenedorAdmision .formulario .terminos input {
+        width: 10%;
+    }
+
+    #admision .contenedorAdmision .formulario .terminos label a{
+        font-size: 0.8rem;
+    }
+
+    /* nosotros.html */
+    #nosotros .contenedor .titulo {
+        font-size: 1.3rem;
+        margin-top: 0;
+    }
+
+    #nosotros .contenedorTextos .titulo {
+        font-size: 1.1rem;
+    }
+
+    #nosotros .contenedorTextos .parrafo {
+        font-size: 0.9rem;
+    }
+
+    #plataforma {
+        margin-top: 20px;
+    }
+
+    /* formacion_academica.html */
+    #formacion_academica .contenedor #formacion .titulo {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    #formacion_academica .contenedor #formacion .parrafo {
+        font-size: 1.1rem;
+    }
+
+    #niveles .titulo {
+        font-size: 1.5rem;
+    }
+
+    /* admision.html */
+    #admision_alumnos #admision .vacantes .titulo {
+        font-size: 1.3rem;
+    }
+    #admision_alumnos #admision .vacantes table td,#admision_alumnos #admision .vacantes table th {
+       padding: 10px 5px ;
+    }
+}
+
+/* Animaciones en nosotros.html */
+.cardNosotros.animate__animated.animate__fadeInLeft {
+    --animate-duration: 3s;
+  }
+.cardNosotros.animate__animated.animate__fadeInRight {
+    --animate-duration: 3s;
+  }
+
+  /* Animaciones en contacto,html */
+  .ubicacion.animate__animated.animate__fadeInLeftBig{
+    --animate-duration: 2s;
+  }
+
+  .formulario.animate__animated.animate__fadeInRightBig{
+    --animate-duration: 2s;
+  }
+
+
+
+

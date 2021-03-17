@@ -1,0 +1,24 @@
+
+@import "./variables";
+
+/* Bootstrap */
+:root {
+    --color-title: black;
+}
+
+.bg-azul {
+    background-color: $color-title;
+    color: white !important;
+}
+
+.black-title {
+    color: --color-title !important;
+}
+
+.blue-title {
+    color: $color-title !important;
+}
+
+.red-title {
+    color: $color-title-red;
+}

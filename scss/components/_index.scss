@@ -1,0 +1,124 @@
+@import "./variables";
+
+main {
+    background-color: #33333334;
+
+    .contenedor{
+        /* text-align: center; */
+        width: 70%;
+    }
+
+    #beneficios {
+
+        .titulo {
+            font-size: $font-size-title;
+            margin-bottom: $margin-bottom;
+            text-align: center;
+            color: $color-title;
+        }
+
+        .contenedorBeneficios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* align-items: center; */
+            width: 100%;
+
+            .cardBeneficio {
+                width: 30%;
+                margin-bottom: $margin-bottom;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+
+                span{
+                    font-size: 4rem;
+                    color: $color-title;
+                }
+
+                .subtitulo {
+                    font-size: $font-size-subtitulo;
+                    margin-bottom: $margin-bottom;
+                }
+                
+            }
+            
+        }
+
+    }
+
+    #admision {
+
+        .contenedorAdmision{
+
+            .titulo{
+                margin-top: 20px;
+                font-size: $font-size-title;
+                margin-bottom: $margin-bottom;
+                color: $color-title;
+            }
+            .parrafo{
+                font-size: $font-size-parrafo;
+                margin-bottom: $margin-bottom;
+            }
+
+            .formularioAdmision{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                input {
+                    width: 48%;
+                    margin-bottom: $margin-bottom - 5;
+                    padding: 10px;
+                    border-radius: $border-radius;
+                    outline: none;
+                    border: 1px solid rgba(0, 0, 0, 0.308);
+                    font-size: 1.1rem;
+                }
+                select {
+                    width: 48%;
+                    height: 45px;
+                    padding: 10px;
+                    margin: 0;
+                    font-size: 1.1rem;
+                    border: 1px solid rgba(0, 0, 0, 0.308);
+                    border-radius: $border-radius;
+                    outline: none;
+                    margin-bottom: $margin-bottom - 5;
+                }
+
+                .terminos {
+                    width: 100%;
+                    text-align: left;
+                    margin-bottom: $margin-bottom - 5;
+
+                    input{
+                        width: 2%;
+                        text-align: left;
+                    }
+                }
+
+                .botonEnviar {
+                    width: 100%;
+                    text-align: center;
+                    padding: 5px;
+
+                    input {
+                        width: 15%;
+                        text-align: center;
+                        background-color: rgba(22, 22, 53, 0.226);
+                        color: black;
+
+                        &:hover {
+                            background-color: #0b2a9a;
+                            color: white;
+                        }
+                    }
+                    
+                }
+            }
+        } 
+    }
+}

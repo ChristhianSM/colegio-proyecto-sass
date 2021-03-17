@@ -1,0 +1,180 @@
+@import "./variables";
+
+/* admision.html */
+/* Header */
+
+#admision_alumnos {
+    
+    .textoFlotante{
+        margin-top: 70px;
+        background: linear-gradient(to right, hsla(0, 54%, 33%, 0.609), hsla(312, 3%, 28%, 0)), url("../img/el-impacto-2.jpg");
+        width: 100%;
+        height: 900px;
+        background-size: 100% 100vh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+
+        .textos {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            color: white;
+            text-align: center;
+
+            .titulo {
+                font-size: $font-size-title;
+                margin-bottom: $margin-bottom;
+            }   
+            .parrafo {
+                font-size: $font-size-subtitulo;
+            }
+        }      
+    }
+
+    #admision {
+
+        .vacantes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .titulo {
+                width: 100%;
+                text-align: center;
+                margin-bottom: $margin-bottom + 5px;
+                color: $color-title;
+            }
+
+            .subtitulo {
+                width: 100%;
+                text-align: center;
+                margin-bottom: $margin-bottom + 5px;
+                color: $color-title-red;
+            }
+
+            table {
+                border-collapse: collapse;
+                text-align: center;
+                margin-bottom: 30px;
+
+                th{
+                    background-color: #081d68d7;
+                    color: white;
+                    padding: 15px 50px;
+                }
+
+                td {
+                    padding: 15px 50px;
+                }
+            } 
+        }
+    }
+
+    #criterios_admision {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .subtitulo {
+            width: 100%;
+            margin-bottom: $margin-bottom + 5px;
+        }
+
+        ol {
+            width: 100%;
+            list-style-position: inside;
+            margin-bottom: $margin-bottom + 5px;
+
+            li {
+                margin-bottom: 10px;
+            }
+        }  
+    }
+
+    #formularioAdmision .contenedor{
+        margin-top: 0;
+        padding-top:  0px;
+        width: 70%;
+
+        .contenedor-admision {
+
+            .titulo {
+                width: 100%;
+                font-size: $font-size-title;
+                margin-bottom: $margin-bottom + 5px;
+                color: $color-title;
+            }
+            .parrafo {
+                width: 100%;
+                font-size: $font-size-parrafo;
+                margin-bottom: $margin-bottom + 5px;
+                color: $color-title-red;
+                font-weight: 600;
+            }
+
+            .formulario{
+                width: 100%;
+
+                .formularioAdmision{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
+
+            input {
+                width: 48%;
+                margin-bottom: $margin-bottom;
+                padding: 10px;
+                border: 2px solid rgba(0, 0, 0, 0.308);
+                border-radius: $border-radius;
+                outline: none;
+            } 
+
+            select {
+                width: 48%;
+                margin-bottom: $margin-bottom;
+                padding: 8px;
+                border: 2px solid rgba(0, 0, 0, 0.308);
+                border-radius: $border-radius;
+                outline: none;
+            }
+
+            .terminos{
+                width: 100%;
+
+                input{
+                    width: 2%;
+                }
+
+                label {
+                    font-weight: 700;
+                }      
+            }
+
+            .botonEnviar {
+                margin-top: $margin-bottom;
+                width: 100%;
+                text-align: center;
+
+                input{
+                    text-align: center;
+                    width: 10%;
+                    padding: 10px;
+                    border-radius: $border-radius;
+                    font-size: $font-size-parrafo;
+                    background-color: #f2f2f2;
+                    color: black;
+
+                    &:hover{
+                        background-color: $color-title;
+                        color: white;
+                    }             
+                }
+            }
+        }       
+    } 
+}
