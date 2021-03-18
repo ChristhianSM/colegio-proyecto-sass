@@ -8,6 +8,7 @@ main {
         width: 70%;
     }
 
+    // Css Anidado --Inicio--
     #beneficios {
 
         .titulo {
@@ -32,20 +33,53 @@ main {
                 align-items: center;
 
                 span{
+                    width: 100%;
                     font-size: 4rem;
                     color: $color-title;
+                    text-align: center;
                 }
 
                 .subtitulo {
                     font-size: $font-size-subtitulo;
                     margin-bottom: $margin-bottom;
+                    width: 100%;
+                    text-align: center;
+
+                    @media screen and (max-width: 320px){
+                        font-size: $font-size-parrafo;
+                    }    
+                }
+
+                .parrafo {
+                    text-align: center;
+                    
+                    @media screen and (max-width: 320px){
+                        font-size: $font-size-parrafo - 0.2rem;
+                    }    
+                }
+
+                @media screen and (max-width: 768px){
+                    width: 45%;
+                    margin-bottom: 20px;
+                }
+
+                @media screen and (max-width: 425px){
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+
+                @media screen and (max-width: 320px){
+                    border: 1px solid;
+                    padding: 10px;
+                    margin-bottom: $margin-bottom;
+                    border-radius: $border-radius;
                 }
                 
             }
             
         }
-
     }
+    //--Fin-- 
 
     #admision {
 
@@ -56,10 +90,19 @@ main {
                 font-size: $font-size-title;
                 margin-bottom: $margin-bottom;
                 color: $color-title;
+
+                @media screen and (max-width: 320px){
+                    font-size: $font-size-parrafo;
+                }
+
             }
             .parrafo{
                 font-size: $font-size-parrafo;
                 margin-bottom: $margin-bottom;
+
+                @media screen and (max-width: 320px){
+                    font-size: $font-size-parrafo - 0.3rem;
+                }
             }
 
             .formularioAdmision{
@@ -76,6 +119,15 @@ main {
                     outline: none;
                     border: 1px solid rgba(0, 0, 0, 0.308);
                     font-size: 1.1rem;
+
+                    @media screen and (max-width: 425px){
+                        width: 100%;
+                    }
+
+                    @media screen and (max-width: 320px){
+                        padding: 10px 5px;
+                        font-size: 0.8rem;;
+                    }
                 }
                 select {
                     width: 48%;
@@ -87,6 +139,17 @@ main {
                     border-radius: $border-radius;
                     outline: none;
                     margin-bottom: $margin-bottom - 5;
+
+                    @media screen and (max-width: 425px){
+                        width: 100%;
+                    }
+
+                    @media screen and (max-width: 320px){
+                        height: 30px;
+                        padding:8px 5px;
+                        text-align: center;
+                        font-size: 0.7rem;
+                    }
                 }
 
                 .terminos {
@@ -97,6 +160,22 @@ main {
                     input{
                         width: 2%;
                         text-align: left;
+
+                        @media screen and (max-width: 425px){
+                            width: 10%;
+                        }
+
+                        @media screen and (max-width: 320px){
+                            width: 10%;
+                        }
+                    }
+
+                    label {
+                        a{
+                            @media screen and (max-width: 320px){
+                                font-size: 0.8rem;
+                            }
+                        }
                     }
                 }
 
@@ -115,10 +194,82 @@ main {
                             background-color: #0b2a9a;
                             color: white;
                         }
+
+                        @media screen and (max-width: 425px){
+                            width: 35%;
+                        }
                     }
                     
                 }
             }
         } 
+    }
+
+    
+    //Metodologia BEM
+    .beneficios__titulo{
+        font-size: $font-size-title;
+        margin-bottom: $margin-bottom;
+        text-align: center;
+        color: $color-title;
+    }
+
+    .beneficios__contenedor--Beneficios{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* align-items: center; */
+        width: 100%;
+    }
+
+    .beneficios__cardBeneficio{
+        width: 30%;
+        margin-bottom: $margin-bottom;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @media screen and (max-width: 768px){
+            width: 45%;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 425px){
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: 320px){
+            border: 1px solid;
+            padding: 10px;
+            margin-bottom: $margin-bottom;
+            border-radius: $border-radius;
+        }
+    }
+
+    .beneficios__icon{
+        width: 100%;
+        font-size: 4rem;
+        color: $color-title;
+        text-align: center;
+    }
+
+    .beneficios__subtitulo{
+        font-size: $font-size-subtitulo;
+        margin-bottom: $margin-bottom;
+        width: 100%;
+        text-align: center;
+
+        @media screen and (max-width: 320px){
+            font-size: $font-size-parrafo;
+        }  
+    }
+
+    .beneficios__parrafo{
+        text-align: center;
+                    
+        @media screen and (max-width: 320px){
+            font-size: $font-size-parrafo - 0.2rem;
+        }    
     }
 }

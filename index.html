@@ -22,26 +22,25 @@
     <!-- Estilos con sass -->
     <link rel="stylesheet" href="./scss/styles.css">
 
-
 </head>
 <body>
     <header >
-        <nav class="menuNavegacion">
-            <div class="logo">
-                <img src="./img/logo.png" alt="">
+        <!-- Bloque  -->
+        <nav class="menu"> 
+            <div class="menu__logo">
+                <img class="menu__img--logo" src="./img/logo.png" alt="">
             </div>
-            <div class="enlaces">
-                <a href="#">Inicio</a>
-                <a href="./nosotros.html">Nosotros</a>
-                <a href="./formacion_academica.html">Formacion Academica</a>
-                <a href="./contactos.html">Contactanos</a>
-                <a href="./admision.html">Admision</a>
+            <div class="menu__enlaces">
+                <a class="menu__enlace" href="#">Inicio</a>
+                <a class="menu__enlace" href="./nosotros.html">Nosotros</a>
+                <a class="menu__enlace" href="./formacion_academica.html">Formacion Academica</a>
+                <a class="menu__enlace" href="./contactos.html">Contactanos</a>
+                <a class="menu__enlace" href="./admision.html">Admision</a>
             </div>
-            <div class="hamburguesa">
-                <img id="hamburguesa" src="./img/menu-24px.svg" alt="menu-hamburguesa">
+            <div class="menu__hamburguesa">
+                <img class="menu__img-hamburguesa" id="hamburguesa" src="./img/menu-24px.svg" alt="menu-hamburguesa">
             </div>
         </nav>
-        
     </header>
 
     <main> 
@@ -53,54 +52,55 @@
         </div>
 
         <div class="contenedor">
+            <!-- Bloque Benefecios -->
             <section id="beneficios">
-                <h2 class="titulo animate__animated animate__backInDown">Beneficios</h2>
-                <div class="contenedorBeneficios">
-                    <div class="cardBeneficio">
-                        <span class="material-icons">
+                <h2 class="beneficios__titulo animate__animated animate__backInDown">Beneficios</h2>
+                <div class="beneficios__contenedor--Beneficios">
+                    <div class="beneficios__cardBeneficio">
+                        <span class="beneficios__icon material-icons">
                             book
                         </span>
-                        <h3 class="subtitulo">Docentes especializados</h3>
-                        <p class="parrafo">Nuestros docentes cuentan con una amplia experiencia profesional y académica</p>
+                        <h3 class="beneficios__subtitulo">Docentes especializados</h3>
+                        <p class="beneficios__parrafo">Nuestros docentes cuentan con una amplia experiencia profesional y académica</p>
                     </div>
-                    <div class="cardBeneficio">
-                        <span class="material-icons">
+                    <div class="beneficios__cardBeneficio">
+                        <span class="beneficios__icon  material-icons">
                             accessibility_new
                         </span>
-                        <h3 class="subtitulo">Clases online</h3>
-                        <p class="parrafo">Clases en vivo, para interactuar profesor y alumno</p>
+                        <h3 class="beneficios__subtitulo">Clases online</h3>
+                        <p class="beneficios__parrafo">Clases en vivo, para interactuar profesor y alumno</p>
                     </div>
-                    <div class="cardBeneficio">
-                        <span class="material-icons">
+                    <div class="beneficios__cardBeneficio">
+                        <span class="beneficios__icon material-icons">
                             description
                         </span>
-                        <h3 class="subtitulo">Material Digital</h3>
-                        <p class="parrafo">Banco de preguntas, separatas teóricas y prácticas. Prácticas por curso.</p>
+                        <h3 class="beneficios__subtitulo">Material Digital</h3>
+                        <p class="beneficios__parrafo">Banco de preguntas, separatas teóricas y prácticas. Prácticas por curso.</p>
                     </div>
-                    <div class="cardBeneficio">
-                        <span class="material-icons">
+                    <div class="beneficios__cardBeneficio">
+                        <span class="beneficios__icon material-icons">
                             work
                         </span>
-                        <h3 class="subtitulo">Orientacion Psicologica</h3>
-                        <p class="parrafo">Brindamos al alumno orientación psicológica y seguimiento constante.</p>
+                        <h3 class="beneficios__subtitulo">Orientacion Psicologica</h3>
+                        <p class="beneficios__parrafo">Brindamos al alumno orientación psicológica y seguimiento constante.</p>
                     </div>
-                    <div class="cardBeneficio">
-                        <span class="material-icons">
+                    <div class="beneficios__cardBeneficio">
+                        <span class="beneficios__icon material-icons">
                             missed_video_call
                         </span>
-                        <h3 class="subtitulo">Constante reforzamiento</h3>
+                        <h3 class="beneficios__subtitulo">Constante reforzamiento</h3>
                         <ul>
                             <li>Simulacros semanales</li>
                             <li>Seminarios semanales</li>
                             <li>Reforzamientos gratuitos</li>
                         </ul>
                     </div>
-                    <div class="cardBeneficio">
-                        <span class="material-icons">
+                    <div class="beneficios__cardBeneficio">
+                        <span class="beneficios__icon material-icons">
                             laptop_chromebook
                         </span>
-                        <h3 class="subtitulo">Soporte</h3>
-                        <p class="parrafo">Nuestro equipo de soporte técnico te ayudará de forma permanente. Además, asesoría y seguimiento académico.</p>
+                        <h3 class="beneficios__subtitulo">Soporte</h3>
+                        <p class="beneficios__parrafo">Nuestro equipo de soporte técnico te ayudará de forma permanente. Además, asesoría y seguimiento académico.</p>
                     </div>
                 </div>
             </section>

@@ -55,8 +55,21 @@ main#contacto{
 
                 iframe {
                     border-radius: $border-radius;
+
+                    @media screen and (max-width: 768px){
+                       height: 300px;
+                    }
                 }
-            }     
+            }  
+            
+            @media screen and (max-width: 768px){
+                width: 80%;
+                margin-bottom: $margin-bottom + 5px;
+            }
+
+            @media screen and (max-width: 425px){
+                width: 90%;
+            }
         }
 
         .formulario {
@@ -72,6 +85,10 @@ main#contacto{
                 color: $color-title-red;
                 width: 100%;
                 text-align: center;
+
+                @media screen and (max-width: 768px){
+                    margin: 10px 0;
+                }
             }
 
             select {
@@ -79,6 +96,14 @@ main#contacto{
                 border: 1px solid #333333;
                 border: none;
                 border-radius: $border-radius - 5px;
+
+                @media screen and (max-width: 768px){
+                    margin-bottom: 10px;
+                }
+
+                @media screen and (max-width: 425px){
+                    width: 100%;
+                }
             }
 
             input {
@@ -89,6 +114,10 @@ main#contacto{
                 border: 1px solid #333333;
                 border: none;
                 border-radius: $border-radius - 5px;
+
+                @media screen and (max-width: 768px){
+                    padding: 5px 5px;
+                }
             }
 
             textarea {
@@ -110,6 +139,24 @@ main#contacto{
                     color: white;
                 }
             }
+
+            @media screen and (max-width: 768px){
+                width: 80%;
+                padding: 10px 30px;
+            }
+
+            @media screen and (max-width: 425px){
+                width: 90%;
+                padding: 10px 20px;
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            width: 80%;
+            justify-content: center;
+        }
+        @media screen and (max-width: 425px){
+            width: 100%;
         }
     }    
 } 

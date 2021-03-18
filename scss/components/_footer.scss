@@ -35,6 +35,10 @@
                 height: 30vh;
                 border-radius: $border-radius;
             }
+
+            @media screen and (max-width: 768px){
+                display: none;
+            }
         }
         
         .colegio {
@@ -51,9 +55,14 @@
                 font-size: $font-size-title - 0.5rem;
                 /* font-weight: 200; */
                 color: white;
+
+                @media screen and (max-width: 320px){
+                    font-size: $font-size-subtitulo;
+                }
             }
 
             a {
+                text-align: center;
                 text-decoration: none;
                 margin-bottom: $margin-bottom + 10px;
                 color: white;
@@ -80,6 +89,10 @@
                 font-size: $font-size-title - 0.5rem;
                 /* font-weight: 200; */
                 color: white;
+
+                @media screen and (max-width: 320px){
+                    font-size: $font-size-subtitulo;
+                }
             }
 
             a {

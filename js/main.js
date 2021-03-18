@@ -1,5 +1,5 @@
-const enlaces = document.getElementsByClassName("enlaces")[0];
-const hamburguesa = document.getElementsByClassName("hamburguesa")[0];
+const enlaces = document.getElementsByClassName("menu__enlaces")[0];
+const hamburguesa = document.getElementsByClassName("menu__hamburguesa")[0];
 const menuHamburguesa = document.getElementById("hamburguesa");
 let abierto = false ;
 

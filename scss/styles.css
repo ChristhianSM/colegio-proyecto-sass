@@ -55,6 +55,45 @@ header .menuNavegacion .enlaces a:hover {
           transform: scale(1.6);
 }
 
+@media screen and (max-width: 768px) {
+  header .menuNavegacion .enlaces a {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .menuNavegacion .enlaces {
+    position: fixed;
+    background-color: #303a52;
+    left: 0;
+    top: 90px;
+    width: 60%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .menuNavegacion .enlaces.enlacesDos {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
 header .menuNavegacion .hamburguesa {
   height: 100%;
   width: 70px;
@@ -63,6 +102,125 @@ header .menuNavegacion .hamburguesa {
 }
 
 header .menuNavegacion .hamburguesa img {
+  padding: 23px 23px;
+}
+
+@media screen and (max-width: 768px) {
+  header .menuNavegacion .hamburguesa {
+    display: block;
+  }
+}
+
+header .menu {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+header .menu__logo {
+  width: 100px;
+  height: 70px;
+  display: inline-block;
+  margin: 10px;
+}
+
+header .menu__img--logo {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  header .menu__enlaces {
+    position: fixed;
+    background-color: #303a52;
+    left: 0;
+    top: 90px;
+    width: 60%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .menu__enlaces.enlacesDos {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+header .menu__enlace {
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  margin-right: 15px;
+  padding: 10px;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+@media screen and (max-width: 768px) {
+  header .menu__enlace {
+    color: white;
+  }
+}
+
+header .menu__enlace:nth-child(5) {
+  background-color: #04175d;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+header .menu__enlace:hover {
+  color: #7c0e04;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+header .menu__hamburguesa {
+  height: 100%;
+  width: 70px;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header .menu__hamburguesa {
+    display: block;
+  }
+}
+
+header .menu__img--hamburguesa {
   padding: 23px 23px;
 }
 
@@ -138,13 +296,56 @@ main #beneficios .contenedorBeneficios .cardBeneficio {
 }
 
 main #beneficios .contenedorBeneficios .cardBeneficio span {
+  width: 100%;
   font-size: 4rem;
   color: #060686;
+  text-align: center;
 }
 
 main #beneficios .contenedorBeneficios .cardBeneficio .subtitulo {
   font-size: 1.5rem;
   margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  main #beneficios .contenedorBeneficios .cardBeneficio .subtitulo {
+    font-size: 1.3rem;
+  }
+}
+
+main #beneficios .contenedorBeneficios .cardBeneficio .parrafo {
+  text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  main #beneficios .contenedorBeneficios .cardBeneficio .parrafo {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #beneficios .contenedorBeneficios .cardBeneficio {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main #beneficios .contenedorBeneficios .cardBeneficio {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #beneficios .contenedorBeneficios .cardBeneficio {
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
 }
 
 main #admision .contenedorAdmision .titulo {
@@ -154,9 +355,21 @@ main #admision .contenedorAdmision .titulo {
   color: #060686;
 }
 
+@media screen and (max-width: 320px) {
+  main #admision .contenedorAdmision .titulo {
+    font-size: 1.3rem;
+  }
+}
+
 main #admision .contenedorAdmision .parrafo {
   font-size: 1.3rem;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 320px) {
+  main #admision .contenedorAdmision .parrafo {
+    font-size: 1rem;
+  }
 }
 
 main #admision .contenedorAdmision .formularioAdmision {
@@ -183,6 +396,19 @@ main #admision .contenedorAdmision .formularioAdmision input {
   font-size: 1.1rem;
 }
 
+@media screen and (max-width: 425px) {
+  main #admision .contenedorAdmision .formularioAdmision input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #admision .contenedorAdmision .formularioAdmision input {
+    padding: 10px 5px;
+    font-size: 0.8rem;
+  }
+}
+
 main #admision .contenedorAdmision .formularioAdmision select {
   width: 48%;
   height: 45px;
@@ -195,6 +421,21 @@ main #admision .contenedorAdmision .formularioAdmision select {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 425px) {
+  main #admision .contenedorAdmision .formularioAdmision select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #admision .contenedorAdmision .formularioAdmision select {
+    height: 30px;
+    padding: 8px 5px;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+}
+
 main #admision .contenedorAdmision .formularioAdmision .terminos {
   width: 100%;
   text-align: left;
@@ -204,6 +445,24 @@ main #admision .contenedorAdmision .formularioAdmision .terminos {
 main #admision .contenedorAdmision .formularioAdmision .terminos input {
   width: 2%;
   text-align: left;
+}
+
+@media screen and (max-width: 425px) {
+  main #admision .contenedorAdmision .formularioAdmision .terminos input {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #admision .contenedorAdmision .formularioAdmision .terminos input {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #admision .contenedorAdmision .formularioAdmision .terminos label a {
+    font-size: 0.8rem;
+  }
 }
 
 main #admision .contenedorAdmision .formularioAdmision .botonEnviar {
@@ -224,9 +483,107 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   color: white;
 }
 
+@media screen and (max-width: 425px) {
+  main #admision .contenedorAdmision .formularioAdmision .botonEnviar input {
+    width: 35%;
+  }
+}
+
+main .beneficios__titulo {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #060686;
+}
+
+main .beneficios__contenedor--Beneficios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* align-items: center; */
+  width: 100%;
+}
+
+main .beneficios__cardBeneficio {
+  width: 30%;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  main .beneficios__cardBeneficio {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main .beneficios__cardBeneficio {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .beneficios__cardBeneficio {
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+}
+
+main .beneficios__icon {
+  width: 100%;
+  font-size: 4rem;
+  color: #060686;
+  text-align: center;
+}
+
+main .beneficios__subtitulo {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  main .beneficios__subtitulo {
+    font-size: 1.3rem;
+  }
+}
+
+main .beneficios__parrafo {
+  text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  main .beneficios__parrafo {
+    font-size: 1.1rem;
+  }
+}
+
 #nosotros {
   /* Section equipo */
   /* Section Plataforma */
+}
+
+@media screen and (max-width: 425px) {
+  #nosotros .contenedor {
+    width: 95%;
+  }
 }
 
 #nosotros .textoFlotante {
@@ -255,8 +612,32 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 425px) {
+  #nosotros .textoFlotante .textos .titulo {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #nosotros .textoFlotante .textos .titulo {
+    margin-top: 0;
+  }
+}
+
 #nosotros .textoFlotante .textos .parrafo {
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 425px) {
+  #nosotros .textoFlotante .textos .parrafo {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #nosotros .textoFlotante .textos .parrafo {
+    font-size: 0.9rem;
+  }
 }
 
 #nosotros h1 {
@@ -307,6 +688,13 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   text-align: justify;
 }
 
+@media screen and (max-width: 768px) {
+  #nosotros .contenedorNosotros .cardNosotros .contenedorTextos {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
 #nosotros .contenedorNosotros .cardNosotros .imagen {
   width: 50%;
 }
@@ -328,6 +716,13 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  #nosotros .contenedorNosotros .cardNosotros .imagen {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
 #nosotros .contenedorNosotros .cardNosotros #mision {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,6 +734,14 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros .contenedorNosotros .cardNosotros #mision img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 #nosotros .contenedorNosotros .cardNosotros #vision {
@@ -365,6 +768,14 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros .contenedorNosotros .cardNosotros #historia img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 #nosotros #equipo {
@@ -408,6 +819,20 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   transition: all 1s;
 }
 
+@media screen and (max-width: 768px) {
+  #nosotros #equipo .contenedorEquipo .cardEquipo img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #nosotros #equipo .contenedorEquipo .cardEquipo img {
+    width: 100%;
+    height: 180px;
+  }
+}
+
 #nosotros #equipo .contenedorEquipo .cardEquipo:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -427,6 +852,20 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
 
 #nosotros #equipo .contenedorEquipo .cardEquipo:hover p {
   bottom: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros #equipo .contenedorEquipo {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #nosotros #equipo .contenedorEquipo {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 #nosotros #plataforma .titulo {
@@ -471,6 +910,13 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   width: 100%;
 }
 
+@media screen and (max-width: 425px) {
+  #nosotros #plataforma .contenedorPlataforma .imagen img {
+    width: 100%;
+    height: 130px;
+  }
+}
+
 #nosotros #plataforma .contenedorPlataforma .textosPlataforma {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -503,6 +949,225 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   color: white;
   border-radius: 10px;
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros #plataforma .contenedorPlataforma .textosPlataforma {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros #plataforma .contenedorPlataforma {
+    -ms-grid-columns: 2fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+#nosotros .nosotros__contenedorNosotros {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+#nosotros .nosotros__cardNosotros {
+  grid-column: 1/-1;
+  border: 3px dotted;
+  padding: 10px 0;
+}
+
+#nosotros .nosotros__quienesSomos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nosotros .nosotros__contenedorTextos {
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros .nosotros__contenedorTextos {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+#nosotros .nosotros__tituloCard {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #7c0e04;
+}
+
+#nosotros .nosotros__parrafo {
+  text-align: justify;
+}
+
+#nosotros .nosotros__imagen {
+  width: 50%;
+}
+
+#nosotros .nosotros__imagen:hover img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros .nosotros__imagen {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+#nosotros .nosotros__imagen-img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#nosotros .nosotros__mision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nosotros .nosotros__vision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nosotros .nosotros__historia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nosotros .equipo {
+  margin-top: 30px;
+}
+
+#nosotros .equipo__titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #060686;
+}
+
+#nosotros .equipo__contenedorEquipo {
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros .equipo__contenedorEquipo {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #nosotros .equipo__contenedorEquipo {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#nosotros .equipo__cardEquipo {
+  text-align: center;
+  padding: 15px 10px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+#nosotros .equipo__cardEquipo:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+#nosotros .equipo__cardEquipo:hover p {
+  bottom: 40%;
+}
+
+#nosotros .equipo__img {
+  width: 85%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros .equipo__img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #nosotros .equipo__img {
+    width: 100%;
+    height: 180px;
+  }
+}
+
+#nosotros .equipo__parrafoOculto {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: -30%;
+  color: black;
+  font-size: 1.3rem;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 /* Bootstrap */
@@ -596,6 +1261,25 @@ main#contacto .contenedor .ubicacion .mapa iframe {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor .ubicacion .mapa iframe {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor .ubicacion {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main#contacto .contenedor .ubicacion {
+    width: 90%;
+  }
+}
+
 main#contacto .contenedor .formulario {
   width: 40%;
   display: -webkit-box;
@@ -617,11 +1301,29 @@ main#contacto .contenedor .formulario .titulo {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor .formulario .titulo {
+    margin: 10px 0;
+  }
+}
+
 main#contacto .contenedor .formulario select {
   height: 35px;
   border: 1px solid #333333;
   border: none;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor .formulario select {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main#contacto .contenedor .formulario select {
+    width: 100%;
+  }
 }
 
 main#contacto .contenedor .formulario input {
@@ -632,6 +1334,12 @@ main#contacto .contenedor .formulario input {
   border: 1px solid #333333;
   border: none;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor .formulario input {
+    padding: 5px 5px;
+  }
 }
 
 main#contacto .contenedor .formulario textarea {
@@ -654,8 +1362,43 @@ main#contacto .contenedor .formulario .boton:hover {
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor .formulario {
+    width: 80%;
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main#contacto .contenedor .formulario {
+    width: 90%;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor {
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main#contacto .contenedor {
+    width: 100%;
+  }
+}
+
 /* admision.html */
 /* Header */
+@media screen and (max-width: 768px) {
+  #admision_alumnos .contenedor {
+    width: 90%;
+  }
+}
+
 #admision_alumnos .textoFlotante {
   margin-top: 70px;
   background: -webkit-gradient(linear, left top, right top, from(rgba(130, 39, 39, 0.609)), to(rgba(74, 69, 73, 0))), url("../img/el-impacto-2.jpg");
@@ -704,6 +1447,12 @@ main#contacto .contenedor .formulario .boton:hover {
   color: #060686;
 }
 
+@media screen and (max-width: 320px) {
+  #admision_alumnos #admision .vacantes .titulo {
+    font-size: 1.5rem;
+  }
+}
+
 #admision_alumnos #admision .vacantes .subtitulo {
   width: 100%;
   text-align: center;
@@ -723,8 +1472,20 @@ main#contacto .contenedor .formulario .boton:hover {
   padding: 15px 50px;
 }
 
+@media screen and (max-width: 320px) {
+  #admision_alumnos #admision .vacantes table th {
+    padding: 10px 5px;
+  }
+}
+
 #admision_alumnos #admision .vacantes table td {
   padding: 15px 50px;
+}
+
+@media screen and (max-width: 320px) {
+  #admision_alumnos #admision .vacantes table td {
+    padding: 10px 5px;
+  }
 }
 
 #admision_alumnos #criterios_admision {
@@ -788,6 +1549,14 @@ main#contacto .contenedor .formulario .boton:hover {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 425px) {
+  #admision_alumnos #formularioAdmision .contenedor .contenedor-admision .formulario .formularioAdmision {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 #admision_alumnos #formularioAdmision .contenedor .contenedor-admision input {
   width: 48%;
   margin-bottom: 15px;
@@ -797,6 +1566,12 @@ main#contacto .contenedor .formulario .boton:hover {
   outline: none;
 }
 
+@media screen and (max-width: 425px) {
+  #admision_alumnos #formularioAdmision .contenedor .contenedor-admision input {
+    width: 90%;
+  }
+}
+
 #admision_alumnos #formularioAdmision .contenedor .contenedor-admision select {
   width: 48%;
   margin-bottom: 15px;
@@ -804,6 +1579,12 @@ main#contacto .contenedor .formulario .boton:hover {
   border: 2px solid rgba(0, 0, 0, 0.308);
   border-radius: 10px;
   outline: none;
+}
+
+@media screen and (max-width: 425px) {
+  #admision_alumnos #formularioAdmision .contenedor .contenedor-admision select {
+    width: 90%;
+  }
 }
 
 #admision_alumnos #formularioAdmision .contenedor .contenedor-admision .terminos {
@@ -837,6 +1618,18 @@ main#contacto .contenedor .formulario .boton:hover {
 #admision_alumnos #formularioAdmision .contenedor .contenedor-admision .botonEnviar input:hover {
   background-color: #060686;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #admision_alumnos #formularioAdmision .contenedor {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #admision_alumnos #formularioAdmision .contenedor {
+    text-align: center;
+  }
 }
 
 #piePagina {
@@ -881,6 +1674,12 @@ main#contacto .contenedor .formulario .boton:hover {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  #piePagina .contenedor .frame {
+    display: none;
+  }
+}
+
 #piePagina .contenedor .colegio {
   width: 33%;
   display: -webkit-box;
@@ -907,7 +1706,14 @@ main#contacto .contenedor .formulario .boton:hover {
   color: white;
 }
 
+@media screen and (max-width: 320px) {
+  #piePagina .contenedor .colegio .titulo {
+    font-size: 1.5rem;
+  }
+}
+
 #piePagina .contenedor .colegio a {
+  text-align: center;
   text-decoration: none;
   margin-bottom: 25px;
   color: white;
@@ -943,6 +1749,12 @@ main#contacto .contenedor .formulario .boton:hover {
   font-size: 2rem;
   /* font-weight: 200; */
   color: white;
+}
+
+@media screen and (max-width: 320px) {
+  #piePagina .contenedor .redesSociales .titulo {
+    font-size: 1.5rem;
+  }
 }
 
 #piePagina .contenedor .redesSociales a {

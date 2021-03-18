@@ -1,6 +1,14 @@
 @import "./variables";
 
 #nosotros{
+
+    .contenedor {
+
+        @media screen and (max-width: 425px){
+            width: 95%;
+        }
+    }
+
     .textoFlotante{
         margin-top: 70px;
         background: linear-gradient(to right, hsla(0, 54%, 33%, 0.609), hsla(312, 3%, 28%, 0)), url("../img/1960.jpg");
@@ -22,10 +30,25 @@
             .titulo {
                 font-size: $font-size-title;
                 margin-bottom: $margin-bottom;
+
+                @media screen and (max-width: 425px){
+                    font-size: $font-size-parrafo;
+                }
+                @media screen and (max-width: 320px){
+                    margin-top: 0;
+                }
             }
 
             .parrafo {
                 font-size: $font-size-subtitulo;
+
+                @media screen and (max-width: 425px){
+                    font-size: $font-size-parrafo - 0.2rem;
+                }
+
+                @media screen and (max-width: 320px){
+                    font-size: $font-size-parrafo - 0.4rem;
+                }
             }
         }
     }
@@ -37,6 +60,7 @@
     } 
 
     // Section nosotros
+    //Css Anidado --Inicio--
     .contenedorNosotros {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -66,6 +90,11 @@
                 .parrafo {
                     text-align: justify;
                 }
+
+                @media screen and (max-width: 768px){
+                    width: 100%;
+                    padding: 10px;
+                }
             }
 
             .imagen {
@@ -83,6 +112,11 @@
                     transform: scale(0.9);
                     border-radius: 10px;
                 }
+
+                @media screen and (max-width: 768px){
+                    width: 100%;
+                    padding: 10px;
+                }
             }
 
             #mision{
@@ -90,6 +124,13 @@
                 flex-wrap: wrap;
                 justify-content: space-around;
                 align-items: center;
+
+                img {
+
+                    @media screen and (max-width: 768px){
+                        order: 1;
+                    }
+                }
             }
 
             #vision{
@@ -104,10 +145,18 @@
                 flex-wrap: wrap;
                 justify-content: space-around;
                 align-items: center;
+
+                img {
+
+                    @media screen and (max-width: 768px){
+                        order: 1;
+                    }
+                }
             }
             
          }
     }
+    // --Fin--
 
     /* Section equipo */
     #equipo {
@@ -140,6 +189,16 @@
                     object-position: center;
                     border-radius: 50%;
                     transition: all 1s;
+
+                    @media screen and (max-width: 768px){
+                        width: 100%;
+                        height: 200px;
+                    } 
+
+                    @media screen and (max-width: 425px){
+                        width: 100%;
+                        height: 180px;
+                    } 
                 }
 
                 &:hover img {
@@ -160,7 +219,15 @@
                 &:hover p {
                     bottom: 40%;
                 }
-            }            
+            } 
+            
+            @media screen and (max-width: 768px){
+                grid-template-columns: repeat(3,1fr);
+            }
+            
+            @media screen and (max-width: 320px){
+                grid-template-columns: repeat(2,1fr);
+            }
         }
     }
 
@@ -197,6 +264,11 @@
 
                 img{
                     width: 100%;
+
+                    @media screen and (max-width: 425px){
+                        width: 100%;
+                        height: 130px;
+                    }
                 }
             }
 
@@ -223,7 +295,173 @@
                     border-radius: $border-radius;
                     font-size: $font-size-parrafo;
                 }
+
+                @media screen and (max-width: 768px){
+                    text-align: center;
+                }
+                
+            }
+
+            @media screen and (max-width: 768px){
+                grid-template-columns: 2fr 1fr 1fr;
             }
         }
     }
+
+    // Metodologia BEM
+    .nosotros__contenedorNosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .nosotros__cardNosotros{
+        grid-column: 1/-1;
+        border: 3px dotted;
+        padding: 10px 0;
+    }
+
+    .nosotros__quienesSomos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nosotros__contenedorTextos{
+        width: 40%;
+
+        @media screen and (max-width: 768px){
+            width: 100%;
+            padding: 10px;
+        }
+    }
+
+    .nosotros__tituloCard{
+        text-align: center;
+        margin-bottom: $margin-bottom;
+        font-size: $font-size-subtitulo + 0.3rem;
+        color: $color-title-red;
+    }
+
+    .nosotros__parrafo{
+        text-align: justify;
+    }
+
+    .nosotros__imagen{
+        width: 50%;
+
+        &:hover img {
+            transform: scale(0.9);
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 768px){
+            width: 100%;
+            padding: 10px;
+        }
+    }
+    
+    .nosotros__imagen-img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+        transition: all 1s;
+    }
+
+    .nosotros__mision{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nosotros__vision{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nosotros__historia {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    //Equipo 
+    .equipo {
+        margin-top: 30px;
+    }
+
+    .equipo__titulo{
+        text-align: center;
+        font-size: $font-size-title;
+        color: $color-title;
+    }
+
+    .equipo__contenedorEquipo{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        justify-content: space-around;
+
+        @media screen and (max-width: 768px){
+            grid-template-columns: repeat(3,1fr);
+        }
+        
+        @media screen and (max-width: 320px){
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
+    .equipo__cardEquipo{
+        text-align: center;
+        padding: 15px 10px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+
+        &:hover img {
+            transform: scale(1.1);
+            opacity: 0.5;
+        }
+
+        &:hover p {
+            bottom: 40%;
+        }
+    }
+
+    .equipo__img{
+        width: 85%;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        transition: all 1s;
+
+        @media screen and (max-width: 768px){
+            width: 100%;
+            height: 200px;
+        } 
+
+        @media screen and (max-width: 425px){
+            width: 100%;
+            height: 180px;
+        } 
+    }
+
+    .equipo__parrafoOculto{
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        bottom: -30%;
+        color: black;
+        font-size: $font-size-parrafo;
+        transition: all 2s;
+    }
+
 } 
